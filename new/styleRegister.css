@@ -41,10 +41,9 @@ h2{
   color: red;
 }
 
-input{
-  width: 250px;
-  padding: 10px;
-  border: none;
+input ,textarea{
+  width: calc(100% - 10px);
+  padding: 5px;  border: none;
   border-radius: 5px; 
   background: lightgray;
   font-size: 16px;
@@ -56,15 +55,6 @@ input,textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-}
-input {
-  width: calc(100% - 10px);
-  padding: 5px;
-}
-
-textarea {
-  width: calc(100% - 12px);
-  padding: 5px;
 }
 
 button {
