@@ -1,0 +1,86 @@
+<html>
+    <head><title>Lab01</title>
+        <link href="sty.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+      
+        <h1>Channel Center</h1></div>
+        <hr width="100%" align="left" style="height:2px;border-width:0;color:rgb(0, 44, 61);background-color:rgb(4, 100, 124)">
+        <br>
+        <h2>View appointments</h2>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('London')">BY DOCTOR</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Paris')">BY DATE</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">BY ROOM</button>
+          </div>
+          <hr width="100%" align="left" style="height:2px;border-width:0;color:rgb(0, 44, 61);background-color:rgb(4, 100, 124)">
+          <div id="London" class="w3-container city">
+            <h2>BY DOCTOR</h2>
+            <form action="get.php" method="GET" ><tr>
+                <th><h3>Enter the doctor name:</h3></th>
+                <th style="text-align: left;"><input id="SearchInput" type="text" name="Search"/>
+                <th> <button type="submit" href="/">Search</button></th></tr>
+                <hr width="100%" align="left" style="height:2px;border-width:0;color:rgb(0, 44, 61);background-color:rgb(4, 100, 124)">
+                <table>
+                    <tr>
+                        <td>Patient Name</td>
+                        <td>Date</td>
+                        <td>Room</td>
+                        <td>Time</td>
+                    </tr>
+                  </table>
+            </form>
+          </div>
+          
+          <div id="Paris" class="w3-container city" style="display:none">
+            <h2>BY DATE</h2>
+            <form action="get.php" method="GET" ><tr>
+                <th><h3>Enter the date:</h3></th>
+                <th style="text-align: left;"><input id="SearchInput" type="text" name="Search"/>
+                <th> <button type="submit" href="/">Search</button></th></tr>
+                <hr width="100%" align="left" style="height:2px;border-width:0;color:rgb(0, 44, 61);background-color:rgb(4, 100, 124)">
+                <table>
+                    <tr>
+                        <td>Doctor Name</td>
+                        <td>Patient Name</td>
+                        <td>Room</td>
+                        <td>Time</td>
+                    </tr>
+                  </table>
+
+            </form>
+          </div>
+          
+          <div id="Tokyo" class="w3-container city" style="display:none">
+            <h2>BY ROOM</h2>
+            <form action="get.php" method="GET" ><tr>
+                <th><h3>Enter the room number:</h3></th>
+                <th style="text-align: left;"><input id="SearchInput" type="text" name="Search"/>
+                    <th> <button type="submit" href="/">Search</button></th></tr>
+                <hr width="100%" align="left" style="height:2px;border-width:0;color:rgb(0, 44, 61);background-color:rgb(4, 100, 124)">
+                <table>
+                    <tr>
+                        <td>Doctor Name</td>
+                        <td>Patient Name</td>
+                        <td>Date</td>
+                        <td>Time</td>
+                    </tr>
+                  </table>
+            </form>
+          </div>
+          
+          <script>
+          function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+          }
+          </script>
+        
+    </body>
+
+</html>

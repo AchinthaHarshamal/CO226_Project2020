@@ -1,0 +1,293 @@
+html, body {
+  min-height: 100%;
+}
+body{
+  padding: 20px;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+}
+#SearchInput{
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  background: rgb(167, 167, 167);
+  font-size: 16px;
+  color: #fff;
+    text-shadow: black;
+}
+
+#t02{
+    color: black;
+}
+.page{
+    border: 2px solid rgba(6, 235, 243, 0.527);
+    background-color:black;
+    padding: inherit;} 
+h2{
+  color: darkcyan;
+}
+table{
+    border-collapse: collapse;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+tr{background-color:rgba(122, 122, 122, 0.699)
+}
+input{
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  background: lightgray;
+  font-size: 16px;
+  color: #fff;
+    text-shadow: black;
+}
+textarea{
+  width: calc(100% - 12px);
+  padding: 5px;
+}
+.header{
+    text-shadow: 2px 2px 7px #defeff;
+    letter-spacing: 0.2em;
+    position: relative;
+    color: rgb(0, 195, 255);
+    animation-name: clr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background:  #669999;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background:  #a3c2c2;
+}
+
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+  color:  #669999;
+}
+
+.item input:hover, .item select:hover, .item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px 0  #669999;
+  color: #669999;
+}
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+.item span {
+  color: red;
+}
+.week {
+  display:flex;
+  justfiy-content:space-between;
+}
+
+.colums {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.colums div {
+  width:48%;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.item i, input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  font-size: 20px;
+  color:  #a3c2c2;
+}
+.item i {
+  right: 1%;
+  top: 30px;
+  z-index: 1;
+}
+
+input, select, textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+input[type="date"] {
+  padding: 4px 5px;
+}
+textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+}
+/*
+@keyframes clr {
+    0% {color: rgb(0, 195, 255);left: 0;}
+    25% {color: rgb(0, 255, 157);left: 20%;}
+    50%  {color: rgb(0, 255, 157);left: 40%;}
+    100%    {color: rgb(0, 195, 255);left: 0;}
+}
+*/
+/*
+    .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 55px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: darkcyan; 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 30px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+    }
