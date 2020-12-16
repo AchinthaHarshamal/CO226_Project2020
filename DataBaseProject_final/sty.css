@@ -1,14 +1,16 @@
-html, body {
+/*html, body {
   min-height: 100%;
 }
+*/
 body{
   padding: 20px;
   margin: 0;
   outline: none;
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
-  color: #666;
+  color: rgb(97, 97, 97);
   line-height: 22px;
+
 }
 #SearchInput{
   width: 250px;
@@ -18,7 +20,7 @@ body{
   background: rgb(167, 167, 167);
   font-size: 16px;
   color: #fff;
-    text-shadow: black;
+  text-shadow: black;
 }
 
 #t02{
@@ -52,6 +54,22 @@ textarea{
   width: calc(100% - 12px);
   padding: 5px;
 }
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background:  #669999;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background:  #a3c2c2;
+}
+
+
 .header{
     text-shadow: 2px 2px 7px #defeff;
     letter-spacing: 0.2em;
@@ -115,19 +133,6 @@ ul {
     padding: 8px;
   }
   
-  button {
-    width: 150px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px; 
-    background:  #669999;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-}
-button:hover {
-    background:  #a3c2c2;
-}
 
 .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
   color:  #669999;
@@ -175,12 +180,12 @@ input[type="date"]::-webkit-inner-spin-button {
   z-index: 1;
 }
 
-input, select, textarea {
+input, textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-input {
+input,select {
   width: calc(100% - 10px);
   padding: 5px;
 }
@@ -191,103 +196,3 @@ textarea {
   width: calc(100% - 12px);
   padding: 5px;
 }
-/*
-@keyframes clr {
-    0% {color: rgb(0, 195, 255);left: 0;}
-    25% {color: rgb(0, 255, 157);left: 20%;}
-    50%  {color: rgb(0, 255, 157);left: 40%;}
-    100%    {color: rgb(0, 195, 255);left: 0;}
-}
-*/
-/*
-    .main-block {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      padding: 5px;
-      background: rgba(0, 0, 0, 0.5); 
-      }
-      .left-part, form {
-      padding: 55px;
-      }
-      .left-part {
-      text-align: center;
-      }
-      .fa-graduation-cap {
-      font-size: 72px;
-      }
-      form {
-      background: darkcyan; 
-      }
-      .title {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      }
-      .info {
-      display: flex;
-      flex-direction: column;
-      }
-      input, select {
-      padding: 30px;
-      margin-bottom: 30px;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #eee;
-      }
-      input::placeholder {
-      color: #eee;
-      }
-      option:focus {
-      border: none;
-      }
-      option {
-      background: black; 
-      border: none;
-      }
-      .checkbox input {
-      margin: 0 10px 0 0;
-      vertical-align: middle;
-      }
-      .checkbox a {
-      color: #26a9e0;
-      }
-      .checkbox a:hover {
-      color: #85d6de;
-      }
-      .btn-item, button {
-      padding: 10px 5px;
-      margin-top: 20px;
-      border-radius: 5px; 
-      border: none;
-      background: #26a9e0; 
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 400;
-      color: #fff;
-      }
-      .btn-item {
-      display: inline-block;
-      margin: 20px 5px 0;
-      }
-      button {
-      width: 100%;
-      }
-      button:hover, .btn-item:hover {
-      background: #85d6de;
-      }
-      @media (min-width: 568px) {
-      html, body {
-      height: 100%;
-      }
-      .main-block {
-      flex-direction: row;
-      height: calc(100% - 50px);
-      }
-      .left-part, form {
-      flex: 1;
-      height: auto;
-      }
-    }
