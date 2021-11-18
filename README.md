@@ -1,5 +1,5 @@
 # CO226_Project2020
-# Doctor Channerling Database System
+# Doctor Channeling Database System
 ## CO226 Project 2020 
 ## Group 19
 ## Group Members :
