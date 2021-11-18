@@ -1,0 +1,52 @@
+CHANNELING_SYSTEM 
+
+ChannelCenter
+	CenterID
+	Name
+	Lacation
+
+Facility
+	CenterID
+	Facility
+
+CenterContacts
+	CenterID
+	Contact
+
+Doctor
+	DictorID
+	Name
+	Speciality
+	Gender
+	Age
+
+DocQualificaition
+	DoctorID
+	DQualification
+
+Visits
+	DoctorID
+	CenterId
+	Room
+	VTime
+	VDate
+
+Appointment
+	AppID 
+	PName 
+	PAddres 
+	PContact
+	PGender
+	PAg
+
+	CenterID
+	Docto
+	AppDate
+	AppTime
+
+
+
+
+Select p.PName ,p.AppDate,p.time , v.Room
+frome Appointment a ,Visits v
+where a.DoctorID =  v.DoctorID  and  a.CenterID = v.CenterID ;
